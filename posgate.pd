@@ -1,0 +1,10 @@
+#N canvas 0 50 450 300 12;
+#X obj 47 36 inlet;
+#X text 20 13 value to check;
+#X obj 47 64 moses 0;
+#X obj 86 92 sel 0;
+#X obj 47 156 outlet;
+#X text 90 156 positive value output;
+#X connect 0 0 2 0;
+#X connect 2 1 3 0;
+#X connect 3 1 4 0;

@@ -1,0 +1,21 @@
+#N canvas 607 6 680 676 12;
+#X obj 44 260 metro;
+#X obj 158 78 inlet;
+#X text 147 51 bpm value;
+#X obj 44 78 inlet;
+#X text 20 51 toggle on/off;
+#X obj 44 237 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 44 326 outlet;
+#X text 94 326 bangs in given bpm;
+#X obj 262 78 f \$1;
+#X obj 262 45 loadbang;
+#X text 228 20 given argument as bpm;
+#X obj 158 117 bpmtoms;
+#X connect 0 0 6 0;
+#X connect 1 0 11 0;
+#X connect 3 0 5 0;
+#X connect 5 0 0 0;
+#X connect 8 0 11 0;
+#X connect 9 0 8 0;
+#X connect 11 0 0 1;
